@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<meta name="viewpoint" content="width=deviece-width, initial-scale=1， charset=utf-8">
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<BODY>
+<div class=container>
+    <form role="form" action="new_activity.php" method="POST">
+	<div class="form-group"><label for="name">活动名称：</label><input type="text" class="form-control" placeholder="" name="act_name"><br></div>
+	<div class="form-group"><label for="name">最大容量：</label><input type="text" class="form-control" placeholder="" name="act_num" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" onpaste="return false"><br></div>
+	<div class="form-group"><label for="name">活动简介：</label><input type="text" class="form-control" placeholder="" name="act_intro"><br></div>
+	<div class="form-group"><label for="name">详细内容: </label><textarea class="form-control" placeholder="" name="act_content"></textarea><br></div>
+	<div class="form-group"><input class="btn btn-lg" type="submit" value="submit"></div>
+    </form>
+</div>
+<BODY>
+</HTML>
